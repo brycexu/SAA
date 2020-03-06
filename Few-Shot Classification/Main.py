@@ -84,7 +84,6 @@ def main(parser, logger):
         scheduler.step()
         avg_loss = np.mean(train_loss[-parser.iterations:])
         avg_acc = 100. * np.mean(train_acc[-parser.iterations:])
-        avg_acc = avg_acc + 3
         print('Training Loss: {} | Accuracy: {}'.format(avg_loss, avg_acc))
         # Validating
         model.eval()
@@ -105,7 +104,6 @@ def main(parser, logger):
             val_acc.append(acc.item())
         avg_loss = np.mean(val_loss[-parser.iterations:])
         avg_acc = 100. * np.mean(val_acc[-parser.iterations:])
-        avg_acc = avg_acc + 3
         print('Validating Loss: {} | Accuracy: {}'.format(avg_loss, avg_acc))
         info = {'val_loss': avg_loss, 'val_accuracy': avg_acc}
         for tag, value in info.items():
@@ -133,7 +131,6 @@ def main(parser, logger):
                                  n_support=parser.num_support_val)
             test_acc.append(acc.item())
     avg_acc = 100. * np.mean(test_acc)
-    avg_acc = avg_acc + 3
     logger.scalar_summary('test_accuracy', avg_acc, 1)
     print('*****Testing Accuracy: {}'.format(avg_acc))
 
