@@ -2,7 +2,7 @@
 # Time : 2019/12/17
 # Function: 
 
-from Parser1 import get_parser1
+from Parser import get_parser1
 from Dataloader import dataloader
 from Network import SAAMNetwork
 from Loss import loss_fn, loss_fn2
