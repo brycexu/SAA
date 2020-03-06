@@ -54,6 +54,19 @@ Dataset downloading links and splitting files are provided here.
 * Validation: 65
 * Test: 72
 
+## Experiments
+### Few-Shot Classification
+You have to configure the experimental setting in Parser.py, then
+```
+  python Main.py
+```
 
+### Zero-Shot Classification
+You have to configure the experimental setting in Main.py, then
+```
+  python Main.py
+```
 
-
+## References
+* https://github.com/renmengye/few-shot-ssl-public
+* https://github.com/chichilicious/awesome-zero-shot-learning#Datasets
