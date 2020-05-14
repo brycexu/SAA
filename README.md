@@ -1,5 +1,5 @@
-## SAAM
-Code for paper "Semantic-Aligned Attention Module for Few-Shot Classification"
+## SAA
+Code for paper "Refining Feature Embedding with Semantic-Aligned Attention for Few-Shot Classification"
 
 ## Overview
 We improve class embedding in few-shot classification
